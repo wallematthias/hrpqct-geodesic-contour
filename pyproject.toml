@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hrpqct-geodesic-contour"
+version = "0.1.0"
+description = "Standalone geodesic active-contour segmentation for fractured HR-pQCT radius scans."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Matthias Walle"},
+]
+dependencies = [
+  "edt>=2.4",
+  "numpy>=1.26,<2.0",
+  "scipy>=1.9",
+  "scikit-image>=0.24,<0.26",
+  "tifffile<2026",
+]
+
+[project.optional-dependencies]
+reports = ["h5py>=3.8"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
