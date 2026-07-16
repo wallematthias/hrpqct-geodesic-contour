@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hrpqct-geodesic-contour"
-version = "0.1.2"
+version = "0.1.3"
 description = "Standalone geodesic active-contour segmentation for fractured HR-pQCT radius scans."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -18,6 +18,7 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering :: Image Processing",
 ]
@@ -26,7 +27,7 @@ dependencies = [
   "numpy>=1.26,<2.0; python_version < '3.13'",
   "numpy>=2.1,<3.0; python_version >= '3.13'",
   "scipy>=1.9",
-  "scikit-image>=0.24,<0.26",
+  "scikit-image>=0.24,<0.27",
   "tifffile<2026",
 ]
 
